@@ -75,22 +75,52 @@ $query_builder = TRUE;
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] ='
-(DESCRIPTION =
-    (ADDRESS =
-      (PROTOCOL = TCP)
-      (HOST = toshiba-PC)
-      (PORT = 1521)
+/*$db['default']['hostname'] ='
+(DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=localhost)
+      (PORT=1521)
     )
-    (CONNECT_DATA =
-      (SERVER = DEDICATED)
-      (SERVICE_NAME = wiliam)
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=orcl.local)
     )
   )';
 
 $db['default']['username'] = 'tibs';
 $db['default']['password'] = 'tibs';
-$db['default']['database'] = 'wiliam';
+$db['default']['database'] = 'orcl';
+$db['default']['dbdriver'] = 'oci8';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = FALSE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;*/
+
+$db['default']['hostname'] ='
+ (DESCRIPTION=
+    (FAILOVER=on)
+    (LOAD_BALANCE=on)
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=10.62.185.22)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=tibsdev)
+    )
+  )';
+
+$db['default']['username'] = 'TOSDB';
+$db['default']['password'] = 'TOSDB';
+$db['default']['database'] = 'orcl';
 $db['default']['dbdriver'] = 'oci8';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
