@@ -316,12 +316,12 @@ class Menus_controller {
         $table->setCriteria('module_id = '.$module_id);
         $items = $table->getAll(0,-1,'menu_order','asc');
         $data = array();
-        $data[] = ['id' => 0,
+        $data[] = array('id' => 0,
                   'parentid' => -1,
                   'text' => $module_name,
                   'expanded' => true,
                   'selected' => true,
-                  'icon' => base_url('images/home.png')];
+                  'icon' => base_url('images/home.png'));
 
         foreach($items as $item) {
 
