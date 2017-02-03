@@ -326,23 +326,23 @@ class Menus_controller {
         foreach($items as $item) {
 
             if( $table->emptyChildren($item['menu_id']) ) {
-                $data[] = [
+                $data[] = array(
                             'id' => $item['menu_id'],
                             'parentid' => empty($item['parent_id']) ? 0 : $item['parent_id'],
                             'text' => $item['menu_title'],
                             'expanded' => false,
                             'selected' => false,
                             'icon' => base_url('images/file-icon.png')
-                          ];
+                          );
             }else {
-                $data[] = [
+                $data[] = array(
                             'id' => $item['menu_id'],
                             'parentid' => empty($item['parent_id']) ? 0 : $item['parent_id'],
                             'text' => $item['menu_title'],
                             'expanded' => false,
                             'selected' => false,
                             'icon' => base_url('images/folder-close.png')
-                          ];
+                          );
             }
         }
 

@@ -38,23 +38,23 @@ class Role_menu_controller {
             }
 
             if( $tMenu->emptyChildren($item['menu_id']) ) {
-                $data[] = [
+                $data[] = array(
                             'id' => $item['menu_id'],
                             'parentid' => empty($item['parent_id']) ? 0 : $item['parent_id'],
                             'text' => $item['menu_title'],
                             'value' => $code,
                             'checked' => $checked,
                             'icon' => base_url('images/file-icon.png')
-                          ];
+                          );
             }else {
-                $data[] = [
+                $data[] = array(
                             'id' => $item['menu_id'],
                             'parentid' => empty($item['parent_id']) ? 0 : $item['parent_id'],
                             'text' => $item['menu_title'],
                             'value' => $code,
                             'checked' => $checked,
                             'icon' => base_url('images/folder-close.png')
-                          ];
+                          );
             }
 
         }
