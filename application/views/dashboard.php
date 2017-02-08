@@ -15,5 +15,5 @@
 
 <h3 class="page-title"> Dashboard</h3>
 <div class="alert alert-success" role="alert">
-    <strong class="green">Welcome to TIBS</strong>
+    <strong class="green">Welcome to TOS</strong>
 </div>
