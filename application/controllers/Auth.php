@@ -17,7 +17,7 @@ class Auth extends CI_Controller
         $data = array();
         $data['login_url'] = base_url()."auth/login";
 
-        $this->load->view('auth/login', $data);
+        $this->load->view('auth/login-2', $data);
     }
 
     public function login() {

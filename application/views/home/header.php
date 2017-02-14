@@ -29,7 +29,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="<?php base_url();?>">
-                        <img src="<?php echo base_url(); ?>assets/image/logo_small.png" alt="logo" class="logo-default" /> </a>
+                        <img src="<?php echo base_url(); ?>assets/image/telkom_small.png" alt="logo" class="logo-default" /> </a>
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
