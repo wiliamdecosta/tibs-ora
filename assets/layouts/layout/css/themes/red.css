@@ -61,7 +61,7 @@
     .page-header.navbar .top-menu .navbar-nav > li.dropdown-tasks .dropdown-menu .dropdown-menu-list .progress {
       background-color: #dfe2e9; }
     .page-header.navbar .top-menu .navbar-nav > li.dropdown-user > .dropdown-toggle > .username {
-      color: #b6d0e7; }
+      color: #ffffff; }
     .page-header.navbar .top-menu .navbar-nav > li.dropdown-user > .dropdown-toggle > i {
       color: #b6d0e7; }
     .page-header.navbar .top-menu .navbar-nav > li.dropdown-user > .dropdown-menu {
@@ -293,13 +293,13 @@
     .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a,
     .page-sidebar .page-sidebar-menu > li.active > a,
     .page-sidebar .page-sidebar-menu > li.active.open > a {
-      background: #3FD5C0;
+      background: #F9ADB3;
       border-top-color: transparent;
       color: #ffffff; }
       .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a:hover, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a:hover,
       .page-sidebar .page-sidebar-menu > li.active > a:hover,
       .page-sidebar .page-sidebar-menu > li.active.open > a:hover {
-        background: #3FD5C0; }
+        background: #D53F70; }
       .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > i,
       .page-sidebar .page-sidebar-menu > li.active > a > i,
       .page-sidebar .page-sidebar-menu > li.active.open > a > i {

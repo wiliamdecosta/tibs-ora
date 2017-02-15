@@ -31,7 +31,7 @@
 }
 
 .home {
-    background:#ea732b;
+    background:#ab002a;
     color:#ffffff;
 }
 
@@ -45,6 +45,10 @@
 
 .jqx-fill-state-normal {
     border: 1px solid #aaa;
+}
+
+.white {
+    color:#ffffff;
 }
 
 .btn {
