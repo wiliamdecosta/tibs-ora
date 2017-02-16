@@ -51,7 +51,7 @@
                             <div id="info" class="text-center blue">
                                 <span> Click a module to view role's menu </span>
                             </div>
-                            <button id="btn-save" class="btn btn-primary btn-block" style="display:none;"> Save Changes </button>
+                            <button id="btn-save" class="btn btn-danger btn-block" style="display:none;"> Save Changes </button>
                             <div class="space-4"></div>
                             <div id="tree-menu">
                                 <!-- tree menu here -->

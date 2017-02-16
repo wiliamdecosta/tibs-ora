@@ -10,7 +10,7 @@
 <div class="space-4"></div>
 <div class="row">
     <div class="col-md-12">
-        <div class="portlet box green">
+        <div class="portlet box blue-hoki">
             <div class="portlet-title">
                 <div class="caption">Form Profile</div>
             </div>
@@ -56,7 +56,7 @@
                     <div class="form-actions">
                         <div class="row">
                             <div class="col-md-offset-3 col-md-9">
-                                <input type="submit" name="submit" value="Save Changes" class="btn btn-success">
+                                <input type="submit" name="submit" value="Save Changes" class="btn btn-danger">
                             </div>
                         </div>
                     </div>

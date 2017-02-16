@@ -35,7 +35,7 @@
             <div class="row" id="detail_placeholder" style="display:none;">
                 <div class="col-xs-12 col-md-3">
                     <div class="form-group">
-                        <button class="btn btn-success btn-block" id="btn-save">
+                        <button class="btn btn-danger btn-block" id="btn-save">
                             Save Changes
                         </button>
                     </div>

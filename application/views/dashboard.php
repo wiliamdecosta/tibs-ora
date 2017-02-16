@@ -14,6 +14,6 @@
 <!-- end breadcrumb -->
 
 <h3 class="page-title"> Dashboard</h3>
-<div class="alert alert-info" role="alert">
-    <strong class="blue">Welcome to TOS</strong>
+<div class="alert alert-default" role="alert">
+    <strong class="red">Welcome to TOS</strong>
 </div>
