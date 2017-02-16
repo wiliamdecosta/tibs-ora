@@ -28,7 +28,7 @@
             <div class="page-header-inner ">
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
-                    <h4 class="white">TOS - Telkom Indonesia</h4>
+                    <img src="<?php echo base_url().'assets/image/telkom_small2.jpg'; ?>">
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->

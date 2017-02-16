@@ -24,7 +24,8 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="<?php base_url();?>">
-                        <h4 class="white">TOS</h4> </a>
+                        <img src="<?php echo base_url().'assets/image/telkom_small2.jpg'; ?>">
+                    </a>
                     <div class="menu-toggler sidebar-toggler">
                         <span></span>
                     </div>
