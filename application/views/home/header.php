@@ -28,7 +28,7 @@
             <div class="page-header-inner ">
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
-                    <img src="<?php echo base_url().'assets/image/telkom_small2.jpg'; ?>">
+                    <img height="47" src="<?php echo base_url().'assets/image/telkom_white.png'; ?>">
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
