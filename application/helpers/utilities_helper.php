@@ -26,11 +26,11 @@ function html_spaces($number=1) {
 }
 
 function breadCrumbs($menu_id) {
-    return '';
+
     $ci =& get_instance();
-    $sql = "WITH RECURSIVE qs AS
+    $sql = "WITH qs(menu_id, parent_id, menu_title) AS
             (
-                SELECT menu_id, parent_id, menu_title::text
+                SELECT menu_id, parent_id, menu_title
                 FROM menus m
                 WHERE parent_id is null
                 UNION ALL
