@@ -77,7 +77,7 @@
         </div>
         <!-- END LOGIN -->
         <!-- BEGIN COPYRIGHT -->
-        <div class="copyright"> 2017 &copy; TOS - Telkom Indonesia. </div>
+        <div class="copyright"> Copyright &copy; 2017 Telkom Indonesia. </div>
         <!-- END COPYRIGHT -->
         <!--[if lt IE 9]>
 <script src="<?php echo base_url(); ?>assets/global/plugins/respond.min.js"></script>
