@@ -36,21 +36,39 @@ class Auth extends CI_Controller
 
         $md5pass = md5(trim($password));
 
-        if( strcmp($md5pass, trim($row['user_password'])) != 0 ) {
-            $this->session->set_flashdata('error_message','Username atau password Anda salah');
-            redirect(base_url().'auth/index');
-        }
 
         if($row['user_status'] != 1) {
             $this->session->set_flashdata('error_message','Maaf, User yang bersangkutan sudah tidak aktif. Silahkan hubungi administrator.');
             redirect(base_url().'auth/index');
         }
 
+        $ldap_status = 'NO';
+
+        if(trim($row['user_password']) == "") { /* Cek LDAP Login */
+            $this->load->model('administration/ldap_connection');
+            /* Open LDAP Connection */
+            $auth = $this->ldap_connection->Open($username, $password);
+            if ($auth == 1) { /* authentifikasi LDAP Telkom berhasil */
+                //do nothing
+                $ldap_status = 'YES';
+            }else {
+                $this->session->set_flashdata('error_message','Username atau password LDAP Anda salah');
+                redirect(base_url().'auth/index');
+            }
+        }else {
+            if( strcmp($md5pass, trim($row['user_password'])) != 0 ) {
+                $this->session->set_flashdata('error_message','Username atau password Anda salah');
+                redirect(base_url().'auth/index');
+            }
+        }
+
+
         $userdata = array(
                         'user_id'           => $row['user_id'],
                         'user_name'         => $row['user_name'],
                         'user_email'        => $row['user_email'],
                         'user_full_name'    => $row['user_full_name'],
+                        'is_ldap'           => $ldap_status,
                         'logged_in'         => true
                       );
 

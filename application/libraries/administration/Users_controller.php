@@ -314,7 +314,7 @@ class Users_controller {
             if($item == null) throw new Exception('ID tidak ditemukan');
 
             $record = array();
-            if(!empty($password)) {
+            if(!empty($password) and $ci->session->userdata('ldap_status') == 'NO') {
                 if(strlen($password) < 4) throw new Exception('Min.Password 4 Karakter');
                 if($password != $password_confirmation) throw new Exception('Password tidak cocok');
 
