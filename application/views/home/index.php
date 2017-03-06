@@ -5,7 +5,7 @@
     }
 </style>
 <div class="row">
-    <div class="col-md-10 col-md-offset-2">
+    <div class="col-md-10 col-md-offset-1">
         <?php
                 $ci = & get_instance();
                 $ci->load->model('administration/modules');

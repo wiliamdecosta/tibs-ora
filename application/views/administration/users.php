@@ -6,18 +6,61 @@
 <div class="space-4"></div>
 <div class="row">
     <div class="col-md-12">
-        <table id="grid-table"></table>
-        <div id="grid-pager"></div>
+        <div class="tabbable">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="javascript:;" data-toggle="tab" aria-expanded="true" id="tab-1">
+                        <i class="blue"></i>
+                        <strong> User </strong>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;" data-toggle="tab" aria-expanded="true" id="tab-2">
+                        <i class="blue"></i>
+                        <strong> Logs </strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content no-border">
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="grid-table"></table>
+                    <div id="grid-pager"></div>
+                </div>
+            </div>
+            <div class="space-4"></div>
+            <hr>
+            <div class="row" id="detail_placeholder" style="display:none;">
+                <div class="col-xs-12">
+                    <table id="grid-table-detail"></table>
+                    <div id="grid-pager-detail"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<div class="space-4"></div>
-<div class="row" id="detail_placeholder" style="display:none;">
-    <input type="hidden" id="temp_user_id">
-    <div class="col-md-12" >
-        <table id="grid-table-detail"></table>
-        <div id="grid-pager-detail"></div>
-    </div>
-</div>
+
+<script>
+$("#tab-2").on("click", function(event) {
+
+    event.stopPropagation();
+    var grid = $('#grid-table');
+    user_id = grid.jqGrid ('getGridParam', 'selrow');
+    user_name = grid.jqGrid ('getCell', user_id, 'user_name');
+
+    if(user_id == null) {
+        swal('Informasi','Silahkan pilih salah satu user','info');
+        return false;
+    }
+
+    loadContentWithParams("administration.logs", {
+        user_id: user_id,
+        user_name : user_name
+    });
+});
+</script>
 
 <script>
     jQuery(function($) {
